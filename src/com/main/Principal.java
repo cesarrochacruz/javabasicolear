@@ -16,6 +16,7 @@ public class Principal {
 		resultado = suma.operacion(valorA, valorB);
 
 		System.out.println("Resultado de suma: " + resultado);
+		System.out.println("Hola mundo");
 	}
 
 }

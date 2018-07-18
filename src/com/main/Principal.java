@@ -1,6 +1,7 @@
 package com.main;
 
-import com.calculadora.Suma;
+import com.calculadora.*;
+
 
 public class Principal {
 
@@ -14,8 +15,13 @@ public class Principal {
 		
 		Suma suma = new Suma();
 		resultado = suma.operacion(valorA, valorB);
+		
+		Resta resta = new Resta();
+		resultado = resta.operacion(16, 18);
 
 		System.out.println("Resultado de suma: " + resultado);
+		System.out.println("hola mundo");
+		System.out.println("Resultado de resta: " + resultado);
 	}
 
 }

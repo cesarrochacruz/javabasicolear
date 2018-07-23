@@ -1,7 +1,7 @@
 package com.calculadora;
 
 /*
- * Clase aritmetica para aculacion decremental
+ * Clase aritmetica para acumulacion decremental
  */
 public class Resta implements Acumula{
 

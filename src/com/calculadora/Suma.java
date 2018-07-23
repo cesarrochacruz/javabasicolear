@@ -1,7 +1,7 @@
 package com.calculadora;
 
 /*
- * Clase aritmetica para aculacion incremental
+ * Clase aritmetica para acumulacion incremental
  */
 public class Suma implements Acumula{
 

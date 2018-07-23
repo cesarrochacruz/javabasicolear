@@ -14,19 +14,19 @@ public class Principal {
 		
 		Suma suma = new Suma();
 		resultado = suma.operacion(valorA, valorB);
-		System.out.println("Suma: " + resultado);
+		System.out.println(" Suma: " + resultado);
 
 		Resta resta = new Resta();
 		resultado = resta.operacion(valorA, valorB);		
-		System.out.println("Resta: " + resultado);
+		System.out.println(" Resta: " + resultado);
 		
 		Multiplicacion multi = new Multiplicacion();
 		resultado = multi.operacion(valorA, valorB);
-		System.out.println("Multiplicacion: " + resultado);
+		System.out.println(" Multiplicacion: " + resultado);
 
 		Division div = new Division();
 		resultado = div.operacion(valorA, valorB);
-		System.out.println("Divicion: " + resultado);
+		System.out.println(" Divicion: " + resultado);
 		
 	}
 

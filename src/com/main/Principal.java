@@ -27,8 +27,15 @@ public class Principal {
 		
 		Resta resta = new Resta();
 		resultado = resta.operacion(16, 18);
-	
+		
 		System.out.println("Resultado de resta: " + resultado );
+		
+		Division division = new Division();
+		resultado = division.operacion(10, 5);
+		
+		System.out.println("Resultado de division es: " + resultado );
+				
+	
 	}
 
 }

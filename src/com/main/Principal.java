@@ -1,5 +1,7 @@
 package com.main;
 
+import java.util.ArrayList;
+
 import com.calculadora.*;
 
 public class Principal {
@@ -32,6 +34,12 @@ public class Principal {
 		resultado = multi.MultiplicacionPorCiclos(valorA, valorB);	
 		System.out.println(" Multiplicacion(ciclos): " + resultado);	
 		
+		//Ejercicio de listas
+		ArrayList<Integer> vec = new ArrayList<Integer>();
+		vec.add(valorA);
+		vec.add(valorB);
+		resultado = suma.sumarContenidoArreglo(vec);
+		System.out.println(" Suma(ArrayList): "+resultado);
 	}
 
 }

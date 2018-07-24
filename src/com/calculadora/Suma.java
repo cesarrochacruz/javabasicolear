@@ -1,5 +1,7 @@
 package com.calculadora;
 
+import java.util.ArrayList;
+
 /*
  * Clase aritmetica para acumulacion incremental
  */
@@ -22,6 +24,14 @@ public class Suma implements IAcumula{
 	
 	public double operacion(double a, double b){
 		return a + b;
+	}
+
+	public double sumarContenidoArreglo(ArrayList<Integer> vec){
+		double resultado = 0;
+		for (Integer i : vec) {
+			resultado += i;
+		}
+		return resultado;
 	}
 	
 }

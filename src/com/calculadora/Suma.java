@@ -3,7 +3,7 @@ package com.calculadora;
 /*
  * Clase aritmetica para acumulacion incremental
  */
-public class Suma implements Acumula{
+public class Suma implements IAcumula{
 
 	public Suma(){		
 	}

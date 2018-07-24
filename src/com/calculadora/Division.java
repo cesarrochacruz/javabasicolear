@@ -3,7 +3,7 @@ package com.calculadora;
 /*
  * Clase aritmetica para productos inverso
  */
-public class Division implements Producto{
+public class Division implements IProducto{
 
 	public Division(){		
 	}

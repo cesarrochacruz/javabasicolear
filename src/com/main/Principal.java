@@ -28,6 +28,10 @@ public class Principal {
 		resultado = div.operacion(valorA, valorB);
 		System.out.println(" Divicion: " + resultado);
 		
+		//Ejercicio de ciclos y arreglos
+		resultado = multi.MultiplicacionPorCiclos(valorA, valorB);	
+		System.out.println(" Multiplicacion(ciclos): " + resultado);	
+		
 	}
 
 }

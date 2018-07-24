@@ -3,7 +3,7 @@ package com.calculadora;
 /*
  * Clase aritmetica para acumulacion decremental
  */
-public class Resta implements Acumula{
+public class Resta implements IAcumula{
 
 	public Resta(){		
 	}	

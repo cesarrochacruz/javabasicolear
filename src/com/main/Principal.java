@@ -10,11 +10,14 @@ public class Principal {
 	public static void main(String[] args) {
 		
 		
-		int valorA = 10;
-		int valorB= 5;
+		int valorA = 4;
+		int valorB= 2;
 		int resultado = 0;
 		int ValorC = 0;
 		float resultadof = 0;
+		
+		System.out.println("Parametro 1: " + valorA);
+		System.out.println("Parametro 2: " + valorB);
 		
 		
 		Suma suma = new Suma();
@@ -32,6 +35,12 @@ public class Principal {
 		
 		resultado = multipli.operacion(valorA, valorB, ValorC);
 		System.out.println("Resultado de multiplicacion multiplicado por suma: " + resultado);
+		
+		resultado = multipli.operacionfor(valorA, valorB);
+		System.out.println("Resultado de multiplicacion con FOR: " + resultado);
+		
+		resultado = multipli.operacionwhile(valorA, valorB);
+		System.out.println("Resultado de multiplicacion con WHILE: " + resultado);
 		
 		Division division = new Division();
 		resultadof = division.operacion(valorA, valorB);

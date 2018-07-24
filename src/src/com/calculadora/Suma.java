@@ -9,6 +9,19 @@ public class Suma {
 			int resultado = 0;
 			resultado = a + b;
 			return resultado;
+	}
+	public double operaction (double a, double b) {
+				double resultado = 0;
+				resultado = a + b;
+				return resultado;
+				
+			}
+			
+	public float operaction (float a, float b) {
+				float resultado = 0;
+				resultado = a + b;
+				return resultado;
+				}
 		
 	}
-}
+

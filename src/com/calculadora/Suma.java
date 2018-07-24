@@ -28,8 +28,11 @@ public class Suma implements IAcumula{
 
 	public double sumarContenidoArreglo(ArrayList<Integer> vec){
 		double resultado = 0;
-		for (Integer i : vec) {
-			resultado += i;
+//		for (Integer i : vec) resultado += i;
+		int i = 0;
+		while (i < vec.size()){
+			resultado += vec.get(i);
+			i++;
 		}
 		return resultado;
 	}

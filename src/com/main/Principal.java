@@ -40,6 +40,7 @@ public class Principal {
 		vec.add(valorB);
 		resultado = suma.sumarContenidoArreglo(vec);
 		System.out.println(" Suma(ArrayList): "+resultado);
+		
 	}
 
 }

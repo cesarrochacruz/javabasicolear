@@ -11,6 +11,8 @@ public class Principal {
 		int valorA = 5;
 		int valorB= 10;
 		double resultado = 0;
+	
+
 		
 		
 		Suma suma = new Suma();
@@ -21,8 +23,16 @@ public class Principal {
 		
 		Multuplicacion multiplicar = new Multuplicacion ();
 		resultado= multiplicar.operacion(valorA, valorB);
-				
+		
 		System.out.println("Resultado de multiplicacion: " + resultado );
+		
+		resultado= multiplicar.nuevamultiplicacion(valorA, valorB);
+		
+		System.out.println("Resultado de multiplicacion con for: " + resultado );
+		
+		resultado= multiplicar.multiplicaionwhile(valorA, valorB);
+		System.out.println("Resultado de multiplicacion con while: " + resultado );
+		
 		
 		Resta resta = new Resta();
 		resultado = resta.operacion(valorA, valorB);

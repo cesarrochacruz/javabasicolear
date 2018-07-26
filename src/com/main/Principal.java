@@ -1,6 +1,12 @@
 package com.main;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 import com.calculadora.*;
 
@@ -30,17 +36,30 @@ public class Principal {
 		resultado = div.operacion(valorA, valorB);
 		System.out.println(" Divicion: " + resultado);
 		
-		//Ejercicio de ciclos y arreglos
+		//Ejercicio 2 de ciclos y arreglos
 		resultado = multi.MultiplicacionPorCiclos(valorA, valorB);	
 		System.out.println(" Multiplicacion(ciclos): " + resultado);	
 		
-		//Ejercicio de listas
-		ArrayList<Integer> vec = new ArrayList<Integer>();
+		//Ejercicio 3 de listas
+		
+		//3.1 List
+		List<Integer> vec = new ArrayList<Integer>();
 		vec.add(valorA);
 		vec.add(valorB);
 		resultado = suma.sumarContenidoArreglo(vec);
-		System.out.println(" Suma(ArrayList): "+resultado);
+		System.out.println(" Suma(List): "+resultado);
+
+		//3.2 Set
+		Set<Integer> set = new HashSet<>(Arrays.asList(valorA, valorB));
+		resultado = suma.sumarContenidoArreglo(set);
+		System.out.println(" Suma(Set): "+resultado);
 		
+		//3.3 Map
+		Map<Integer,Integer> map = new HashMap<>();
+		map.put(0, valorA);
+		map.put(1, valorB);
+		resultado = suma.sumarContenidoArreglo(map);
+		System.out.println(" Suma(Map): "+resultado);
 	}
 
 }

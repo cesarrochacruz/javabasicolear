@@ -4,6 +4,9 @@ import com.calculadora.Suma;
 import com.calculadora.Resta;
 import com.calculadora.Multipli;
 import com.calculadora.Division;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.HashMap;
 
 public class Principal {
 
@@ -15,6 +18,8 @@ public class Principal {
 		int resultado = 0;
 		int ValorC = 0;
 		float resultadof = 0;
+		int[] ValorD = new int[5];
+		ArrayList<Integer> res = new ArrayList<Integer>();
 		
 		System.out.println("Parametro 1: " + valorA);
 		System.out.println("Parametro 2: " + valorB);
@@ -45,6 +50,17 @@ public class Principal {
 		Division division = new Division();
 		resultadof = division.operacion(valorA, valorB);
 		System.out.println("Resultado de division: " + resultadof);
+		
+		
+        for(int i=0;i<ValorD.length;++i){
+        	ValorD[i]= ((int) (Math.random() * 10) + 1); //Obtengo números random
+        }
+		
+		res = suma.sumarContenidoArreglo(ValorD);
+		System.out.println("Resultado de sumarContenidoArreglo: " + res);
+		
+		resultado = suma.sumarContenidoLista(res);
+		System.out.println("Resultado de sumarContenidoLista: " + resultado);
 	}
 
 }

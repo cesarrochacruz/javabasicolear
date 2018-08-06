@@ -20,6 +20,8 @@ public class Principal {
 		float resultadof = 0;
 		int[] ValorD = new int[5];
 		ArrayList<Integer> res = new ArrayList<Integer>();
+		HashSet<Integer> resSet = new HashSet<Integer>();
+		HashMap<Integer,Integer> resMap = new HashMap<Integer,Integer>();
 		
 		System.out.println("Parametro 1: " + valorA);
 		System.out.println("Parametro 2: " + valorB);
@@ -56,11 +58,23 @@ public class Principal {
         	ValorD[i]= ((int) (Math.random() * 10) + 1); //Obtengo números random
         }
 		
-		res = suma.sumarContenidoArreglo(ValorD);
-		System.out.println("Resultado de sumarContenidoArreglo: " + res);
+		res = suma.ArmarLista(ValorD);
+		System.out.println("Resultado de ArmarLista: " + res);
 		
 		resultado = suma.sumarContenidoLista(res);
 		System.out.println("Resultado de sumarContenidoLista: " + resultado);
+		
+		resSet = suma.ArmarSet(ValorD);
+		System.out.println("Resultado de ArmarSet: " + resSet);	
+		
+		resultado = suma.sumarContenidoSet(resSet);
+		System.out.println("Resultado de sumarContenidoSet: " + resultado);		
+		
+		resMap = suma.ArmarMap(ValorD);
+		System.out.println("Resultado de ArmarMap: " + resMap);	
+		
+		resultado = suma.sumarContenidoColeccionMap(resMap);
+		System.out.println("Resultado de sumarContenidoColeccionMap: " + resultado);
 	}
 
 }

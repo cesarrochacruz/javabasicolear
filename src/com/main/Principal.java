@@ -10,7 +10,7 @@ public class Principal {
 
 	public static void main(String[] args) {
 		
-		
+	
 		int valorAint = 15;
 		int valorBint= 10;
 		int resultadoInt = 0;
@@ -63,7 +63,12 @@ public class Principal {
 		resultadoDouble = division.operacion(valorAdouble, valorBdouble);
 		System.out.println("Resultado de division Double "+ resultadoDouble);
 		
+		// SUMAR VALORES DE UN ARREGLO 
+		int resultado;
+		int sumar[] = {4,3,5,7,10,1};
 		
+		resultado =  suma.sumarArreglo(sumar);
+		System.out.println("Resultado de suma de arreglos : "+resultado);
 		
 	}
 

@@ -16,4 +16,13 @@ public class Suma {
 		resultado = a + b;
 		return resultado;
 	}
+	
+	public int sumarArreglo(int sumar[]) {
+		int resultado = 0;
+		
+		for(int i=0; i<sumar.length; i++){
+			resultado=resultado + sumar[i];
+		} 
+		return resultado;
+	}
 }

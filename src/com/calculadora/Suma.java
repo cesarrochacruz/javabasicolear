@@ -11,4 +11,9 @@ public class Suma {
 			return resultado;
 		
 	}
+	public double operacion(double a,double b) {
+		double resultado = 0;
+		resultado = a + b;
+		return resultado;
+	}
 }
